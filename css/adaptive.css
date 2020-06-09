@@ -1,0 +1,121 @@
+@media (max-width: 1279px) {
+    .container {
+        width: 950px;
+    }
+    .billing table {
+        margin: 15px auto 25px;
+    }
+    .billing table thead {
+        display: none;
+    }
+    .billing table tbody tr {
+        display: block;
+        margin-top: 10px;
+    }
+    .billing table td {
+        display: block;
+        position: relative;
+        padding: 10px 15px 10px 250px;
+        border: 1px solid #EEEEEE;
+    }
+    .billing table td[data-th]:before  {
+        content: attr(data-th);
+        display: block;
+        position: absolute;
+        left: 15px;
+        font-family: 'GothamProMedium', serif;
+    }
+    .billing table tr td:first-child img {
+        padding-left: 0;
+    }
+}
+@media (max-width: 980px) {
+    .container {
+        width: 738px;
+        padding: 0 15px;
+    }
+    .billing-top {
+        display: block;
+        padding: 15px 35px;
+    }
+    .billing-top li {
+        float: left;
+        width: 49%;
+        border: 1px solid #EEEEEE;
+    }
+    .billing-top li:nth-child(2),
+    .billing-top li:nth-child(4),
+    .billing-top li:nth-child(6) {
+        float: right;
+    }
+    .billing-top li a {
+        padding-left: 48px;
+    }
+    .billing-top li a:before {
+        left: 10px;
+    }
+    .billing-card .right-block {
+        margin-top: 0;
+    }
+    .billing-card .right-block a {
+        line-height: 25px;
+    }
+    .billing table td {
+        padding-left: 200px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 0;
+    }
+    .billing-top,
+    .billing-wrapper {
+        padding: 15px;
+    }
+    .billing-card .left-block,
+    .billing-card .right-block {
+        text-align: center;
+        float: none;
+    }
+    .billing-card .billing-title,
+    .billing-card .right-block {
+        margin-bottom: 8px;
+    }
+    .billing-card .right-block {
+        margin-top: 8px;
+    }
+    .billing-card .left-block .card-info {
+        display: block;
+    }
+    .billing-pagination .left-block,
+    .billing-pagination .right-block {
+        margin-top: 10px;
+    }
+    .billing table {
+        margin: 15px auto;
+    }
+    .billing table td {
+        padding-left: 160px;
+    }
+}
+@media (max-width: 480px) {
+    .billing-top li,
+    .billing-top li:nth-child(2),
+    .billing-top li:nth-child(4),
+    .billing-top li:nth-child(6) {
+        float: none;
+        width: 100%;
+    }
+    .billing-card .left-block {
+        text-align: center;
+    }
+    .billing-card .left-block .card-info,
+    .billing table td {
+        text-align: center;
+        padding-left: 15px;
+    }
+    .billing table td[data-th]:before {
+        position: inherit;
+    }
+}

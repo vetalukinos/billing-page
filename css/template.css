@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+}
+
+body {
+    color: #444;
+    font-size: 14px;
+    font-family: 'GothamProRegular', serif;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+}
+.container {
+    overflow: hidden;
+    width: 1220px;
+    margin: 0 auto;
+}
+.billing {
+    padding-top: 125px;
+}
+.billing-top {
+    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    border: 1px solid rgba(206, 204, 204, 0.3);
+}
+.billing-top li:hover a,
+.billing-top li.active a {
+    color: #338BD9;
+}
+.billing-top li a {
+    display: block;
+    position: relative;
+    padding-left: 38px;
+    color: #929DA9;
+    font-size: 12px;
+    font-family: 'GothamProMedium', serif;
+    line-height: 49px;
+}
+.billing-top li a:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: url("../images/billing_top_1.svg") no-repeat;
+}
+.billing-top li:hover a:before,
+.billing-top li.active a:before {
+    background: url("../images/billing_top_1_active.svg") no-repeat;
+}
+.billing-top li:nth-child(2) a:before {
+    background: url("../images/billing_top_2.svg") no-repeat;
+}
+.billing-top li:nth-child(2):hover a:before,
+.billing-top li.active:nth-child(2) a:before {
+    background: url("../images/billing_top_2_active.svg") no-repeat;
+}
+.billing-top li:nth-child(3) a:before {
+    top: 13px;
+    background: url("../images/billing_top_3.svg") no-repeat;
+}
+.billing-top li:nth-child(3):hover a:before,
+.billing-top li.active:nth-child(3) a:before {
+    background: url("../images/billing_top_3_active.svg") no-repeat;
+}
+.billing-top li:nth-child(4) a:before {
+    background: url("../images/billing_top_4.svg") no-repeat;
+}
+.billing-top li:nth-child(4):hover a:before,
+.billing-top li.active:nth-child(4) a:before {
+    background: url("../images/billing_top_4_active.svg") no-repeat;
+}
+.billing-top li:nth-child(5) a:before {
+    background: url("../images/billing_top_5.svg") no-repeat;
+}
+.billing-top li:nth-child(5):hover a:before,
+.billing-top li.active:nth-child(5) a:before {
+    background: url("../images/billing_top_5_active.svg") no-repeat;
+}
+.billing-top li:nth-child(6) a:before {
+    background: url("../images/billing_top_6.svg") no-repeat;
+}
+.billing-top li:nth-child(6):hover a:before,
+.billing-top li.active:nth-child(6) a:before {
+    background: url("../images/billing_top_6_active.svg") no-repeat;
+}
+
+.billing-wrapper {
+    margin-top: 15px;
+    padding: 15px 35px;
+    border: 1px solid rgba(205, 205, 205, 0.3);
+    box-shadow: -1px 2px 1px rgba(0, 0, 0, 0.12);
+}
+.billing-title {
+    font-size: 19px;
+    line-height: 28px;
+}
+.billing-card {
+    overflow: hidden;
+    margin: 15px auto 35px;
+    padding: 0 30px 0 5px;
+    border: 1px solid #EEEEEE;
+    border-radius: 2px;
+}
+.billing-card .left-block {
+    float: left;
+}
+.billing-card .left-block img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.billing-card .left-block .card-info {
+    display: inline-block;
+    vertical-align: middle;
+}
+.billing-card .left-block .card-info span {
+    color: #909398;
+    font-size: 14px;
+}
+.billing-card .left-block .card-info span:first-child {
+    margin-right: 25px;
+}
+.billing-card .right-block {
+    float: right;
+    margin-top: 8px;
+}
+.billing-card .right-block a {
+    display: block;
+    text-align: center;
+    color: #2281C2;
+    font-size: 11px;
+    line-height: 16px;
+}
+.billing-table {
+    overflow: hidden;
+    margin-top: 5px;
+}
+.billing-pagination {
+    overflow: hidden;
+}
+.billing-pagination span,
+.billing-pagination ul,
+.billing-pagination ul li {
+    display: inline-block;
+}
+.billing-pagination ul li {
+    margin-left: 10px;
+}
+.billing-pagination ul li a {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #CFD3D5;
+    border-radius: 3px;
+}
+.billing-pagination ul li.active a {
+    color: #338BD9;
+    border: 1px solid #338BD9;
+}
+.billing-pagination .left-block {
+    float: left;
+}
+.billing-pagination .right-block {
+    float: right;
+}
+.billing table {
+    width: 100%;
+    margin: 10px auto 40px;
+    border-collapse: collapse;
+}
+.billing table thead tr {
+    height: 56px;
+    font-size: 12px;
+    font-family: 'GothamProMedium', serif;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #EEEEEE;
+}
+.billing table thead th {
+    text-align: left;
+}
+.billing table thead th:first-child {
+    padding-left: 15px;
+}
+.billing table tbody tr {
+    border: 1px solid #EEEEEE;
+}
+.billing table td {
+    padding: 10px 0;
+    line-height: 26px;
+}
+.billing table tbody tr a {
+    color: #338BD9;
+    font-family: 'GothamProMedium', serif;
+}
+.billing table tr td img {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+.billing table tr td:first-child img {
+    padding: 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

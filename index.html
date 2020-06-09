@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Billing</title>
+    <link href="css/template.css" type="text/css" rel="stylesheet"/>
+    <link href="css/adaptive.css" type="text/css" rel="stylesheet"/>
+    <link href="css/font.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<section class="billing">
+    <div class="container">
+        <ul class="billing-top">
+            <li><a href="#">Подписка и лимиты</a></li>
+            <li class="active"><a href="#">Биллинг</a></li>
+            <li><a href="#">Сообщения</a></li>
+            <li><a href="#">Мой профиль</a></li>
+            <li><a href="#">Вход в аккаунт</a></li>
+            <li><a href="#">Удаление аккаунта</a></li>
+        </ul>
+
+        <div class="billing-wrapper">
+            <div class="billing-title">Current payment method</div>
+            <div class="billing-card">
+                <div class="left-block">
+                    <img src="images/billing_card_img.svg">
+                    <div class="card-info">
+                        <div class="billing-title">Mastercard</div>
+                        <div class="billing-info">
+                            <span class="ends">ends with 2763</span>
+                            <span class="expires">expires on 09/23</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-block">
+                    <a href="#">Change payment method</a>
+                    <a href="#">List all payment methods (3)</a>
+                </div>
+            </div>
+            <div class="billing-title">Billing history</div>
+            <div class="billing-table">
+                <div class="billing-pagination">
+                    <div class="left-block">
+                        <span>На странице</span>
+                        <ul>
+                            <li class="active"><a href="#">5</a></li>
+                            <li><a href="#">10</a></li>
+                            <li><a href="#">15</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-block">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">7</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="billing-table-content">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Billing date</th>
+                            <th>Payment method</th>
+                            <th>Invoices</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td data-th="Billing date:"><img src="images/billing_table_check.svg" />22 March 2020</td>
+                            <td data-th="Payment method:"><img src="images/billing_table_card_1.svg" />MasterCard…4483</td>
+                            <td data-th="Invoices:"><a href="#">Details</a></td>
+                            <td data-th="Description:">Активация Basic. От 22/03/2020 до 21/04/2020 (1 месяц).</td>
+                            <td data-th="Amount:">$30</td>
+                        </tr>
+                        <tr>
+                            <td data-th="Billing date:"><img src="images/billing_table_check.svg" />22 Апреля 2020</td>
+                            <td data-th="Payment method:"><img src="images/billing_table_card_2.svg" />PayPal</td>
+                            <td data-th="Invoices:"><a href="#">Details</a></td>
+                            <td data-th="Description:">Активация Basic. От 22/02/2020 до 21/03/2020 (1 месяц).</td>
+                            <td data-th="Amount:">$30</td>
+                        </tr>
+                        <tr>
+                            <td data-th="Billing date:"><img src="images/billing_table_error.svg" />22 March 2017</td>
+                            <td data-th="Payment method:"><img src="images/billing_table_card_3.svg" />VISA…1532</td>
+                            <td data-th="Invoices:">No details</td>
+                            <td data-th="Description:">Ошибка оплаты тарифного плана Базовый. </td>
+                            <td data-th="Amount:">Waiting pay $30</td>
+                        </tr>
+                        <tr>
+                            <td data-th="Billing date:"><img src="images/billing_table_check.svg" />22 March 2020</td>
+                            <td data-th="Payment method:"><img src="images/billing_table_card_1.svg" />MasterCard…4483</td>
+                            <td data-th="Invoices:"><a href="#">Details</a></td>
+                            <td data-th="Description:">Активация Basic. От 22/03/2020 до 21/04/2020 (1 месяц).</td>
+                            <td data-th="Amount:">$30</td>
+                        </tr>
+                        <tr>
+                            <td data-th="Billing date:"><img src="images/billing_table_check.svg" />22 Апреля 2020</td>
+                            <td data-th="Payment method:"><img src="images/billing_table_card_2.svg" />PayPal</td>
+                            <td data-th="Invoices:"><a href="#">Details</a></td>
+                            <td data-th="Description:">Активация Basic. От 22/02/2020 до 21/03/2020 (1 месяц).</td>
+                            <td data-th="Amount:">$30</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="billing-pagination">
+                    <div class="left-block">
+                        <span>На странице</span>
+                        <ul>
+                            <li class="active"><a href="#">5</a></li>
+                            <li><a href="#">10</a></li>
+                            <li><a href="#">15</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-block">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">7</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
